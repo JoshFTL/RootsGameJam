@@ -351,6 +351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4175868058815309519}
+  - component: {fileID: 7549676118163774557}
   m_Layer: 5
   m_Name: Resource Prefab
   m_TagString: Untagged
@@ -380,6 +381,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7549676118163774557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7056603065063440115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53576deb79b1e7428fd374bff40357c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CreateResourceButton: {fileID: 5676962636970457794}
+  IconRender: {fileID: 5632348441915668936}
+  QuantityText: {fileID: 7535984307546684037}
+  Item: {fileID: 0}
 --- !u!1 &7156696289588422052
 GameObject:
   m_ObjectHideFlags: 0

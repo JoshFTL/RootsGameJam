@@ -12,4 +12,5 @@ public class Item : ScriptableObject
     public bool IsLocked;
     public int Quantity;
     public int PerSecond;
+    public int PerClick;
 }
