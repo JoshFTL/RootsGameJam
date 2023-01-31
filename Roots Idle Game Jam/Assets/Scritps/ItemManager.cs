@@ -22,14 +22,14 @@ public class ItemManager : MonoBehaviour
 
         foreach(Item item in Items)
         {
-            Debug.Log(item.Name);
+            Debug.Log(item.Name + " " + item.Id);
         }
     }
 
     private void Start()
     {
-        string currentItemName = PlayerPrefs.GetString("lastCraft", "lightitem");
-        CurrentItem = GetItem(currentItemName);
+        string currentItemName = PlayerPrefs.GetString("lastCraft", "light");
+        GetItem(currentItemName);
     }
 
     private void Update()
@@ -63,7 +63,7 @@ public class ItemManager : MonoBehaviour
 
     public static void IncrementItem(Item item)
     {
-        item.Quantity += item.PerSecond;
+        if(item != null) item.Quantity += item.PerSecond;
     }
 
     private void OnApplicationQuit()

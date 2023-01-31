@@ -11,14 +11,8 @@ public class ResourceItem : MonoBehaviour
     public TextMeshProUGUI QuantityText;
     [HideInInspector] public Item Item;
 
-    private void OnEnable()
+    private void Update()
     {
-        StartCoroutine(SetQuantity());
-    }
-
-    IEnumerator SetQuantity()
-    {
-        yield return new WaitForEndOfFrame();
-        QuantityText.text = Item.Quantity.ToString();
+            QuantityText.text = Item.Quantity.ToString();
     }
 }
